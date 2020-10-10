@@ -42,7 +42,17 @@ nav {
   background-color: limegreen;
 }
 
+.hero {
+  background-color: whitesmoke;
+}
 
+.hero img {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding-top: 40px;
+}
 .medsos {
   overflow: hidden;
 }
