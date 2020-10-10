@@ -6,6 +6,7 @@
 
 body {
   font-family: 'Commissioner', sans-serif;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -44,8 +45,8 @@ a {
     250ms color ease-in;
 }
 
-a:hover:not(.active),
-a:focus:not(.active) {
+li a:hover:not(.active),
+li a:focus:not(.active) {
   transform: scale(1.1);
   opacity: 1;
   background-color: salmon;
@@ -156,7 +157,7 @@ main {
 h2 {
   text-transform: capitalize;
   margin: 25px 0 10px 0;
-  padding: 0 0 5px 0;
+  padding: 0 10px 5px 10px;
   border-bottom: 1px solid black;
 }
 
@@ -164,6 +165,7 @@ h2 {
 .job,
 .univ {
   margin: 0;
+  padding: 0 10px 0 10px;
 }
 
 h3,
@@ -171,6 +173,27 @@ h4 {
   text-transform: capitalize;
 }
 
-.deskripsi {
-  border-right: 1px solid black;
+p {
+  text-align: justify;
+}
+
+.subdeskripsi:nth-child(1) p:nth-child(3) {
+  padding: 0 10px 0 10px;
+}
+
+.univ p:nth-child(3) {
+  margin-top: 2px;
+}
+
+.univ p:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.skills li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.subskills ul {
+  padding-left: 10px;
 }
