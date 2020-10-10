@@ -13,11 +13,14 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
 nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
+
 .navbar {
   padding: 0;
   margin: 0;
@@ -31,15 +34,28 @@ nav {
 }
 
 a {
-  padding: 5px 10px;
+  padding: 15px 10px;
   display: inline-block;
   text-transform: capitalize;
   text-decoration: none;
+  opacity: 0.9;
+  transition: 250ms transform ease-in-out,
+    250ms opacity linear,
+    250ms color ease-in;
 }
+
+a:hover:not(.active),
+a:focus:not(.active) {
+  transform: scale(1.1);
+  opacity: 1;
+  background-color: salmon;
+}
+
 .navbar .item a {
-    color: white;
+  color: white;
 }
-.navbar .item:nth-child(1) {
+
+.navbar .active {
   background-color: limegreen;
 }
 
@@ -54,36 +70,107 @@ a {
   border-radius: 50%;
   padding: 40px 0 20px 0;
 }
-.hero h1, .hero h5 {
+
+.hero h1,
+.hero h5 {
   text-align: center;
 }
+
 .hero h1 {
   text-transform: uppercase;
   font-size: 3.5rem;
 }
+
 .hero h5 {
   text-transform: capitalize;
-  font-size: .5rem;
+  font-size: 1.25rem;
   font-weight: normal;
 }
+
 .hero .alamat {
   padding: 0;
 }
+
 .hero .phone {
   padding: 20px 0;
 }
-h1,h2,h3,h4,h5 {
+
+h1,
+h2,
+h3,
+h4,
+h5 {
   color: limegreen;
-  padding: 5px;
   margin: 0;
 }
+
 .medsos {
+  width: max-content;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  border: 1px solid black;
+  margin: 0 auto;
+  padding: 0 0 40px 0;
+  overflow: hidden;
+
 }
-.wadah-medsos {
-  border: 1px solid black;
+
+.medsos li {
+  float: left;
+}
+
+.medsos a {
+
+  text-align: center;
+  padding: 10px;
+  width: 35px;
+  margin: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+
+  color: #3B5998;
+}
+
+.fa-twitter {
+  color: #55ACEE;
+}
+
+.fa-google {
+  color: #dd4b39;
+}
+
+.fa-linkedin {
+  color: #007bb5;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deskripsi {
+  width: 80%;
+}
+
+h2 {
+  text-transform: capitalize;
+  margin: 25px 0 10px 0;
+  padding: 0 0 5px 0;
+  border-bottom: 1px solid black;
+}
+
+.isi,
+.job,
+.univ {
+  margin: 0;
+}
+
+h3,
+h4 {
+  text-transform: capitalize;
+}
+
+.deskripsi {
+  border-right: 1px solid black;
 }
