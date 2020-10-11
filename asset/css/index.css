@@ -271,6 +271,7 @@ footer h3, footer p, footer p a {
 }
 footer h3 {
   text-transform: uppercase;
+  color: limegreen;
   border-bottom: 1px solid limegreen;
 }
 footer a:hover {
