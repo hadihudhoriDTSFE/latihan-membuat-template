@@ -1,3 +1,9 @@
-.container {
-    border: 5px solid red;
+.gallery-box {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-box img {
+  flex-basis: 100px;
 }
