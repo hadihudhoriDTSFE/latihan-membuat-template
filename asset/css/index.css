@@ -158,7 +158,10 @@ h2 {
   text-transform: capitalize;
   margin: 25px 0 10px 0;
   padding: 0 10px 5px 10px;
-  border-bottom: 1px solid black;
+}
+
+main h2 {
+  border-bottom: 2px solid darkgray;
 }
 
 .isi,
@@ -196,4 +199,85 @@ p {
 
 .subskills ul {
   padding-left: 10px;
+}
+
+.kotak-pesan {
+  background-color: whitesmoke;
+}
+.kotak-pesan form {
+  padding-bottom: 40px;
+}
+.kotak-pesan p,
+form {
+  padding: 0 10px 0px 10px;
+  text-align: justify;
+  max-width: 600px;
+}
+
+.kotak-pesan form input {
+  width: 70%;
+  display: inline-block;
+  margin-bottom: 5px;
+  line-height: 1.6;
+}
+
+.kotak-pesan form label {
+  width: 25%;
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.kotak-pesan form select {
+  display: inline-block;
+  width: 20%;
+  margin-right: 50%;
+  padding: 3px 0;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.kotak-pesan form textarea {
+  display: inline-block;
+  width: 70%;
+  height: 100px;
+  resize: none;
+  margin-bottom: 5px;
+  vertical-align: text-top;
+}
+
+.kotak-pesan form button {
+  width: 70px;
+  margin-left: calc(100% - 70px);
+  display: inline-block;
+  text-align: center;
+  padding: 6px;
+  text-transform: capitalize;
+  font-weight: 700;
+  background-color: limegreen;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  transition: 250ms transform ease-in-out;
+}
+.kotak-pesan form button:hover {
+  transform: scale(1.1);
+}
+
+footer h3, footer p, footer p a {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: white;
+}
+footer h3 {
+  text-transform: uppercase;
+  border-bottom: 1px solid limegreen;
+}
+footer a:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 10px;
+  background-color: black;
 }
