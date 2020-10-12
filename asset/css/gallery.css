@@ -19,7 +19,7 @@ img {
   width: 100%;
   transition: 250ms ease-in-out;
 }
-img:hover {
+img:hover, img:focus {
   transform: scale(1.5);
 }
 .row {
